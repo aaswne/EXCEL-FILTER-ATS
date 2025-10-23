@@ -1,0 +1,82 @@
+:root {
+  --accent: #0b67ff;
+  --bg: #f7f9fc;
+  --panel: #fff;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  margin: 0;
+  padding: 3%;
+  background-color: lightblue;
+  color: black;
+}
+
+.topbar {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background: var(--panel);
+  background-color: lightblue;
+  border-radius: 10px;
+}
+
+.file-label {
+  background: var(--accent);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.table-area {
+  background: var(--panel);
+  padding: 10px;
+  margin: 10px;
+}
+
+.clusterize-scroll {
+  height: 60vh;
+  overflow: auto;
+}
+
+th,
+td {
+  padding: 5px;
+  border: 1px solid #ddd;
+}
+.col-filter {
+  width: 90%;
+  font-size: 0.8rem;
+  padding: 2px;
+  margin-top: 3px;
+}
+
+mark {
+  background-color: yellow;
+  color: black;
+  font-weight: bold;
+  padding: 0 2px;
+  border-radius: 2px;
+}
+
+body {
+  padding: 3%;
+  outline: 1px gray;
+  background-color: transparent;
+  color: black;
+}
+
+.sidebar {
+ 
+  border: 1px solid black;
+  padding: 4px;
+  margin-top: 15px;
+}
+
+footer {
+  background-color: lightblue;
+}
