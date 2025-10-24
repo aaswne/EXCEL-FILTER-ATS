@@ -70,7 +70,6 @@ function buildHead() {
   tableHead.appendChild(headRow);
 }
 
-
 // --- COLUMN FILTER HANDLER ---
 function onColumnFilterChange(e) {
   const col = e.target.dataset.col;
@@ -80,7 +79,6 @@ function onColumnFilterChange(e) {
   applyAllFilters(globalSearch.value.trim().toLowerCase());
 }
 
-
 // --- GLOBAL SEARCH INPUT ---
 globalSearch.addEventListener('input', e => {
   clearTimeout(searchTimeout);
@@ -89,7 +87,6 @@ globalSearch.addEventListener('input', e => {
     applyAllFilters(query);
   }, 150);
 });
-
 
 // --- APPLY FILTERS (exact substring only) ---
 function applyAllFilters(globalQuery = '') {

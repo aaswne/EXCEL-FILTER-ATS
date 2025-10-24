@@ -8,13 +8,12 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   background: var(--bg);
   margin: 0;
-  padding: 3%;
+  padding: 1%;
   background-color: lightblue;
   color: black;
 }
 
 .topbar {
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -22,6 +21,8 @@ body {
   background: var(--panel);
   background-color: lightblue;
   border-radius: 10px;
+  left: 0;
+  right: 0;
 }
 
 .file-label {
@@ -64,19 +65,36 @@ mark {
 }
 
 body {
-  padding: 3%;
+  padding: 1%;
   outline: 1px gray;
   background-color: transparent;
   color: black;
 }
 
 .sidebar {
- 
+  border-radius: 10px;
   border: 1px solid black;
-  padding: 4px;
-  margin-top: 15px;
+  padding: 24px;
+  margin-top: 10px;
 }
 
 footer {
+  display: flex;
   background-color: lightblue;
+  position: relative;
+  margin-top: -50px;
+}
+
+.powered-by{
+  text-decoration: solid;
+  color: red;
+  cursor: pointer;
+  display: inline-block; /* needed for transform */
+  transition: transform 0.6s ease; 
+  text-decoration: underline;
+
+}
+
+.powered:hover {
+  animation: spin 0.6s linear;
 }
